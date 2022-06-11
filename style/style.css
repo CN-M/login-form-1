@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #141e30;
+  background: linear-gradient(to right, #243b55, #141e30);
+  position: relative;
+  overflow: hidden;
+}
+body .form {
+  margin-bottom: 60px;
+  z-index: 15;
+  position: relative;
+  width: 440px;
+  overflow: hidden;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+body .header {
+  margin: 0 0 40px;
+  text-align: center;
+}
+body .header h1 {
+  color: #93ff96;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+body .header h2 {
+  color: #f0f8ff;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 15px;
+}
+body .header p {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+}
+body .form-component {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 0 0 20px;
+  outline: none;
+}
+body .form-component input {
+  outline: none;
+  display: block;
+  background: #234368;
+  width: 100%;
+  border: 0;
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: #93ff96;
+  font-size: inherit;
+  transition: 0.3s ease-in-out;
+  font-weight: 300;
+}
+body .form-component .checkbox {
+  cursor: pointer;
+}
+body .form-component .checkbox span {
+  display: inline-block;
+  color: #f0f8ff;
+  vertical-align: middle;
+  position: absolute;
+}
+body .form-component .checkbox span i {
+  position: relative;
+  color: #f0f8ff;
+  opacity: 0;
+  left: 4px;
+}
+body .form-component .checkbox span:first-child {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #234368;
+  border-radius: 5px;
+  vertical-align: middle;
+  border: 1px solid #234368;
+  transition: all 0.2s ease-in-out;
+}
+body .form-component .checkbox span:first-child:hover {
+  border-color: #93ff96;
+}
+body .form-component .checkbox span:last-child {
+  padding-left: 8px;
+}
+body .form-component .inp-checkbox:checked + .checkbox span:first-child i {
+  opacity: 1;
+}
+body .form-component a {
+  color: #93ff96;
+  text-decoration: none;
+  transition: 0.1s linear;
+  padding: 0 5px;
+}
+body .form-component a:hover {
+  transform: scale(1.05);
+}
+body .form-component button {
+  outline: none;
+  background: #93ff96;
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-radius: 25px;
+  padding: 12px 40px;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #234368;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+body .form-component button:hover {
+  transform: scale(1.06);
+}
+body .form-component button:focus {
+  color: #93ff96;
+  background-color: #f0f8ff;
+}
+body .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  bottom: -150px;
+  animation: animated 7s linear infinite;
+  opacity: 0.5;
+}
+body li:nth-child(1) {
+  left: 10%;
+  font-size: 70px;
+  color: #234368;
+  animation-delay: 0s;
+}
+body li:nth-child(2) {
+  left: 30%;
+  font-size: 70px;
+  width: 150px;
+  height: 150px;
+  color: #234368;
+  animation-delay: 1s;
+  border-radius: 20px;
+  background-color: #234368;
+}
+body li:nth-child(3) {
+  left: 46%;
+  font-size: 50px;
+  color: #234368;
+  animation-delay: 2s;
+}
+body li:nth-child(4) {
+  left: 63%;
+  width: 25px;
+  height: 25px;
+  color: #234368;
+  animation-delay: 5s;
+  border-radius: 20px;
+  background-color: #234368;
+}
+body li:nth-child(5) {
+  left: 80%;
+  font-size: 40px;
+  color: #234368;
+  animation-delay: 7s;
+}
+body li:nth-child(6) {
+  left: 55%;
+  font-size: 350px;
+  color: #234368;
+  animation-delay: 3s;
+  bottom: -400px;
+}
+
+@keyframes animated {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-1100px) rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
