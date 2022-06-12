@@ -65,6 +65,7 @@ body {
         justify-content: space-between;
         margin: 0 0 20px;
         outline: none;
+        align-items: center;
     
         input {
             outline: none;
@@ -79,6 +80,21 @@ body {
             transition: 0.3s ease-in-out;
             font-weight: 300;
         }
+
+        #checkbox,
+        #viewPswd {
+            display: none;
+        }
+
+        &:nth-child(2) {
+            justify-content: flex-end;
+
+            #eye {
+                color: $white;
+                margin-left: -30px;
+                cursor: pointer;
+            }
+        }
     
         .checkbox {
             cursor: pointer;
@@ -87,13 +103,14 @@ body {
                 display: inline-block;
                 color: $white;
                 vertical-align: middle;
-                position: absolute;
+                position: relative;
     
                 i {
                     position: relative;
                     color: $white;
                     opacity: 0;
-                    left: 4px;
+                    left: 3.5px;
+                    top: 2px;
                 }
     
                 &:first-child {
@@ -112,15 +129,17 @@ body {
                 }
     
                 &:last-child {
-                    padding-left: 8px;
+                    padding-left: 5px;
                 }
             }
         }
+
         .inp-checkbox:checked + .checkbox span:first-child {
             i {
                 opacity: 1;
             }
         }
+
         a {
             color: $green;
             text-decoration: none;
@@ -156,6 +175,7 @@ body {
             }
         }
     }
+    
     .box {
         position: absolute;
         top: 0;
@@ -228,9 +248,8 @@ body {
     0% {
         transform: translateY(0) rotate(0deg);
     }
-
     100% {
-        transform: translateY(-1100px) rotate(360deg);
+        transform: translateY(-1200px) rotate(360deg);
     }
 }
 
